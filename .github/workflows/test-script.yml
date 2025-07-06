@@ -1,0 +1,35 @@
+name: test Node.js scripts
+
+on:
+  push:
+    branches: ["*"]
+  pull_request:
+    branches: ["*"]
+
+jobs:
+  run-scripts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Copy config.json.example to config.json (if present)
+        run: |
+          if [ -f config.json.example ]; then
+            cp config.json.example config.json
+          fi
+
+      - name: Run dev server
+        run: timeout 10 npm run dev || true
+
+      - name: Build frontend
+        run: npm run build

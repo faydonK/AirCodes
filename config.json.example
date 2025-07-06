@@ -1,0 +1,29 @@
+{
+  "discord": {
+    "token": "YOUR_BOT_TOKEN",
+    "clientId": "YOUR_CLIENT_ID",
+    "clientSecret": "YOUR_CLIENT_SECRET",
+    "serverId": "YOUR_SERVER_ID",
+    "channelId": "DISCORD_CHANNEL_ID",
+    "mentionRoleId": "ROLE_ID_TO_MENTION" 
+    "redeemUrl": "https://yourdomain.com/redeem"
+    "inviteLink": "https://discord.gg/your-invite",
+  },
+  "coins": {
+    "name": "",
+    "minValue": 10.00,
+    "maxValue": 100.00
+  },
+  "codes": {
+    "maxSlots": 10,
+    "codeLength": 8,
+    "scheduleHours": {
+      "start": 8,
+      "end": 20
+    }
+  },
+  "server": {
+    "name": "", 
+    "sessionSecret": "change-this-random-character--NEVER-SHARE"
+  }
+}

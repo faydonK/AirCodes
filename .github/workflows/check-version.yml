@@ -1,0 +1,19 @@
+name: Check package.json version
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  check-version-change:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
+      - name: Check if version changed in package.json
+        run: |
+          ver_pkg=$(jq -r .version package.json)
+          ver_lock=$(jq -r .version package-lock.json)
+          test "$ver_pkg" = "$ver_lock"
