@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://aircodes.net">
-  <img src="https://cdn.discordapp.com/attachments/1390831106307260510/1390831217758179410/Icon-AirCodes-modified.png?ex=6869b002&is=68685e82&hm=48df57361aa14ad22fdc902ecfe0ccb98cc77c6ec849350ead6bc862932d24b8&" alt="Icon AirCodes" width="180" />
+  <img src="https://raw.githubusercontent.com/aircodes-net/.github/main/assets/Icon-AirCodes.png" alt="Icon AirCodes" width="180" />
   </a>
 </p>
 
