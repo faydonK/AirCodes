@@ -4,7 +4,8 @@ import { AuthService } from './services/auth';
 import { HomePage } from './pages/home';
 import { LoginPage } from './pages/login';
 import { RedeemPage } from './pages/redeem';
-import { NotFoundPage } from './pages/404';
+// import { LeaderboardPage } from './pages/leaderboard';
+import { NotFoundPage } from './pages/404'
 
 class App {
   private authService: AuthService;
@@ -22,6 +23,7 @@ class App {
     this.router.addRoute('/home', () => new HomePage(this.authService));
     this.router.addRoute('/login', () => new LoginPage(this.authService));
     this.router.addRoute('/redeem', () => new RedeemPage(this.authService));
+    // this.router.addRoute('/leaderboard', () => new LeaderboardPage());
     this.router.addRoute('/404', () => new NotFoundPage());
   }
 
