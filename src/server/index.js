@@ -209,7 +209,13 @@ if (config.discord.inviteLink && config.discord.inviteLink.trim() !== '') {
   });
 }
 
-app.get('*', (req, res) => {
+// Rate limiter for catch-all route serving index.html
+const catchAllLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // limit each IP to 100 requests per windowMs
+});
+
+app.get('*', catchAllLimiter, (req, res) => {
   if (req.path.startsWith('/api/')) {
     return res.status(404).json({ error: 'API endpoint not found' });
   }
