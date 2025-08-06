@@ -256,6 +256,7 @@ class AirCodesBot {
 
       const embed = {
         title: 'A new code is available!',
+        url: config.discord.redeemUrl,
         description: `The new code is \`${code}\``,
         color: 0x5865F2,
         footer: { 
