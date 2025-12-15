@@ -1,19 +1,18 @@
-MIT License
+AirCodes License
 
 Copyright (c) 2025 faydonK
 
-All rights reserved.
+Permission is granted to use, copy, modify, and redistribute this software,
+provided that this copyright notice is preserved.
 
-This software is provided "as is" for private, educational, or internal use only.  
-You are **not allowed** to:
+You may self-host and deploy this software for personal, educational,
+community, or internal use.
 
-- Reuse this code or parts of it to offer a paid or free commercial service.
-- Modify and redistribute this code or make it publicly available.
-- Remove or alter author attributions, including GitHub links, credits, or signatures.
-- Claim ownership or authorship of this project or its components.
+You may NOT offer this software, in whole or in part, as a paid or
+commercial hosting service, or as a dedicated hosting platform for your own
+customers, without prior written authorization from the copyright holder.
 
-Use of this code is strictly limited to deployments and installations authorized by the original author.
-
-Any violation will result in legal action.
+The software is provided "as is", without warranty of any kind.
 
 Contact: contact@aircodes.net for partnership or licensing requests.
+
